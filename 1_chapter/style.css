@@ -6,67 +6,47 @@
 
 body{
   font-family: 'Noto Sans KR', sans-serif;
+  margin:0;
+  height: 100vh;
 }
-
-a{
-  text-decoration: none;
+a{text-decoration: none;}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
 }
 .container{
-  /* display: flex; */
-  border: 5px solid #000;
-  width: 80%;
-  margin:auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 header{
-  text-align: center;
-  padding:2em;
-
-  background-color: tomato;
+  background-color: yellow;
+  padding: 30px;
 }
+.banner{
+  background-color: yellowgreen;
+  padding: 30px;
+}
+
 section{
   display: flex;
+  height: 100%;
 }
-article{
-  border: 1px solid #000;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+section article{
 }
-.left{
+.navi{
   flex: 1;
-  background-color: yellow;
+  background-color: pink;
+  padding: 30px;
 }
-.main{
-  flex: 4;
-  background-color: gray;
-}
-.right{
-  flex: 1;
-  background-color: green;
-  
-}
-footer{
-  text-align: center;
-  padding:2em;
-  background-color: aqua;
+.content{
+  flex: 2;
+  background-color: skyblue;
+  padding: 30px;
 }
 
 @media (max-width:768px){
-  .container{
-   width:100%
-  }
-  section{
-    flex-direction: column;
-  }
-  .left{order:2}
-  .main{order:1}
-  .right{order:3}
+
 }
-
-
-
-
 
 
 
