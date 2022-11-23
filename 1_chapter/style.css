@@ -4,48 +4,39 @@
 /* Google Web Fonts CDN */
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
 
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+}
 
 a{
   text-decoration: none;
 }
 
-body{
-  height: 100vh;
+.parent{
+  border: 5px solid #000;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.yellowgreen{
-  background-color: yellowgreen;
-  width: 800px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.royablue{
-  background-color: royalblue;
-  width: 600px;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.crimson{
-  background-color: crimson;
-  width: 400px;
-  height: 150px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.gray{
-  background-color: gray;
-  width: 100px;
-  height: 100px;
-  margin: 5px;
-}
+  flex-wrap: wrap;
 
+}
+.parent div{
+  /* width: 200px; */
+  height: 200px;
+  /* flex-basis: 500px;
+  flex-grow:1 */
+  flex: 1 0 400px;
+}
+.child1{
+  background-color: crimson;
+  
+}
+.child2{
+  background-color: yellowgreen;
+  
+}
+.child3{
+  background-color: royalblue;
+  
+}
 
 
 
