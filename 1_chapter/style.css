@@ -13,6 +13,7 @@ a{text-decoration: none;}
 h1,h2,h3,h4,h5,h6{
   margin: 0;
 }
+/* 스크롤 없는 100퍼센트 높이 화면 */
 .container{
   display: flex;
   flex-direction: column;
@@ -34,12 +35,12 @@ section{
 section article{
 }
 .navi{
-  flex: 1;
+  flex-basis: 300px;
   background-color: pink;
   padding: 30px;
 }
 .content{
-  flex: 2;
+  flex: 1;
   background-color: skyblue;
   padding: 30px;
 }
